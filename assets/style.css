@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+body.light-theme {
+    background-color: #fff; 
+    color: #000;
+}
+body.dark-theme {
+    background-color: #000; 
+    color: #fff;
+}
+
+.clock-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    height: fit-content;
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.light-theme #clock {
+    background-color: #ffffff;
+}
+#clock {
+    font-size: 5rem;
+    background-color: #000; 
+    color: #df4aa1;
+    padding: 20px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+}
+#themeToggle {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: inherit;
+    transition: transform 0.3s;
+}
+#themeToggle:hover{
+    transform: scale(1.1);
+}
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #df4aa1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-content ul li {
+    display: inline;
+}
+
+.footer-content ul li a {
+    color: #ffebef;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #fff;
+}
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-links li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.social-links li a:hover {
+    transform: scale(1.1); 
+}
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.social-links li a.iconeEmail{
+    width: 50px ;
+    height: 50px ;
+}
+@media (max-width: 1025px) {
+}
+    #clock {
+        font-size: 3rem; 
+        padding: 15px 30px;
+    }
